@@ -23,14 +23,14 @@ number_of_k8s_masters_no_floating_ip = 0
 
 number_of_k8s_masters_no_floating_ip_no_etcd = 0
 
-flavor_k8s_master = "3"
+flavor_k8s_master = "4"
 
 # nodes
-number_of_k8s_nodes = 0
+number_of_k8s_nodes = 8
 
-number_of_k8s_nodes_no_floating_ip = 1
+number_of_k8s_nodes_no_floating_ip = 0
 
-flavor_k8s_node = "3"
+flavor_k8s_node = "4"
 
 # GlusterFS
 # either 0 or more than one
@@ -44,18 +44,18 @@ flavor_k8s_node = "3"
 
 # networking
 
-network_name = "MODIFY_THIS_TO_UNIQUE_VALUE"
+network_name = "fengggli-kubespray-network"
 # IU
-external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
+#external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
 # TACC
-# external_net = "865ff018-8894-40c2-99b7-d9f8701ddb0b"
+external_net = "865ff018-8894-40c2-99b7-d9f8701ddb0b"
 #subnet_cidr = "<cidr>"
 floatingip_pool = "public"
 
 # list of availability zones available in your OpenStack cluster
 # IU
-az_list = ["zone-r6"]
-az_list_node = ["zone-r6"]
+#az_list = ["zone-r6"]
+#az_list_node = ["zone-r6"]
 
 bastion_allowed_remote_ips = ["0.0.0.0/0"]
 
