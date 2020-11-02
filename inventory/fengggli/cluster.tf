@@ -5,8 +5,11 @@ variable cluster_name {}
 public_key_path = "~/.ssh/id_rsa.pub"
 
 # image to use for bastion, masters, standalone etcd instances, and nodes
+#image = "snap-ubuntu1804-20201102"
 image = "JS-API-Featured-Ubuntu18-Latest"
+#image = "JS-API-Featured-CentOS8-Latest"
 # user on the node (ex. core on Container Linux, ubuntu on Ubuntu, etc.)
+#ssh_user = "centos"
 ssh_user = "ubuntu"
 
 # 0|1 bastion nodes
@@ -24,7 +27,7 @@ number_of_k8s_masters_no_floating_ip_no_etcd = 0
 flavor_k8s_master = "4"
 
 # nodes
-number_of_k8s_nodes = 8 
+number_of_k8s_nodes = 8
 number_of_k8s_nodes_no_floating_ip = 0 
 flavor_k8s_node = "4"
 
@@ -39,7 +42,7 @@ flavor_k8s_node = "4"
 #flavor_gfs_node = "<UUID>"
 
 # networking
-network_name = "fengggli-kubespray-network"
+network_name = "ebroker-kubespray-network"
 # IU
 #external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
 # TACC
